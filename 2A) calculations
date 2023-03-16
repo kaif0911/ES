@@ -1,0 +1,17 @@
+#delay calculation
+ Crystal frequency : 11.0592 MHz
+  Clock frequency f= 11.0592/2 = 0.9216.MHz
+ Time period of clock (T) = 1/f = 1/0.9216 MHz=1.085 msec
+To get delay of specific time (say 1 sec): the loop 
+Should be executed n times
+        n=delay time in msec/clock time in u sec 
+
+    n= 1000 msec/1.085 usec = 921.658
+
+
+ Data to be loaded in timer :
+  Data =FFFF-921.653
+       =65536-921.653
+       = 64614.34
+       =Fc65 H
+   Set TL=65H and TH=FCH
