@@ -15,3 +15,15 @@ Should be executed n times
        = 64614.34
        =Fc65 H
    Set TL=65H and TH=FCH
+
+
+
+n= 2000 msec/1.085 usec = 1843.317
+
+
+ Data to be loaded in timer :
+  Data =FFFF-1843.317
+       =65536-1843.317
+       = 63692.68
+       = F8 cc
+   Set TL=cc and TH=F8
